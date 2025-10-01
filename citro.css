@@ -1,0 +1,123 @@
+/* Style général */
+body {
+    font-family: Arial, sans-serif;
+    color:#fff;
+    background-color: #000000
+    
+}
+
+/* En-tête */
+header {
+    background-color: #000000;
+   
+}
+
+.logo
+{
+    text-align: left;
+}
+
+/* Conteneur header*/
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.But
+{
+    list-style: none;
+    text-align: center;
+    margin-top: -84px;
+}
+
+.But li {
+    display: inline;
+    margin: 0 40px;
+}
+
+
+button 
+{
+    cursor: pointer;
+    background-color: #070101;
+    border-radius: 25px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    border-radius: 500px;
+    overflow: hidden;
+    color:#fff;
+    outline: none;
+    transition: all 2s;
+ 
+    
+   }
+   
+   
+   button:hover{
+    background-color: red;
+
+   }
+
+
+
+/* Sections principales */
+section {
+    padding: 40px 0;
+    background-image: url('fond.jpg');
+    color: #ffffff;
+    
+}
+
+article {
+    padding: 40px 0;
+    background-color: #333;
+    color: #ffffff;
+    
+}
+
+.hist
+{
+    float:right; 
+    margin:0 10px 0 20px; 
+    margin-top: -20px;
+    margin-right: -80px;
+    
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+p{
+    text-align:justify;
+}
+
+
+/* Pied de page */
+footer {
+    background-color: #000000;
+    height: 250px;
+    color: #fff;
+    text-align: center;
+    
+}
+
+.imfoot
+{
+    text-align: center;
+}
+
+
+
+
