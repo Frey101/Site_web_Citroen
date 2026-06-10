@@ -1,67 +1,181 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>Citroen</title>
-    <link href="citro.css" rel="stylesheet">
-    
-</head>
-<body>
-    <header>
-        <img src="logo.jpg" width="100" height="80" />
-        <button> Diagnostique</button>
-        <button> RSE</button>
-        <button> A propos de nous</button>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Citroën</title>
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./image/ic.webp" />
+  </head>
+  <body>
+    <a href="#" class="btn">
+      <img src="./image/fleche.webp" alt="icone" class="icone" />
+    </a>
 
-    <main>
+    <!-- Barre de progression -->
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- Contenu de la page pour scroller -->
+    <div class="content">
+      <div class="haut">
         <nav>
-            <p>Citroën est une marque française de voitures appartenant au groupe
-                Stellantis. Elle est appelée en forme longue Automobiles Citroën. Fondée en juin 1919 par André Citroën.
-                La marque est connue pour ses avancées technologiques et, à plusieurs reprises, elle a bouleversé le
-                domaine de
-                l'automobile. La Traction avant, l'utilitaire H, les 2 CV, DS, Méhari, SM, GS, CX, BX et la XM sont
-                toutes des voitures d'avant-garde de Citroën. Citroën est une filiale du groupe PSA depuis 1976 et
-                Stellantis depuis 2021, qui comprend DS Automobiles et Peugeot, ainsi que Vauxhall et Opel 2017.
-                Ses bureaux d'études et de recherches sont situés à Vélizy-Villacoublay, Poissy (CEMR),
-                Carrières-sous-Poissy et Sochaux-Montbéliard depuis 2021 (anciennement à Rueil-Malmaison). Stellantis
-                est actuellement dirigée par Carlos Tavares, ancien numéro deux de Renault. Avec son département Citroën
-                Racing (anciennement Citroën Sport), Citroën participe à la compétition automobile.</p>
+          <img src="./image/logo.webp" width="150" height="130" alt="logo" />
+          <ul>
+            <li>
+              <div class="choix">
+                <button>Diagnostique</button>
+                <div class="contentchoix">
+                  <a href="./page2.html ">Interne</a>
+                  <a href="./page3.html ">Externe</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="./page6.html"><button>RSE</button></a>
+            </li>
+            <li>
+              <div class="choix">
+                <button>A propos de nous</button>
+                <div class="contentchoix">
+                  <a href="./page4.html ">Force de Porter</a>
+                  <a href="./p5.html ">Analyse de Pestel</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Conteneur de l'image et de la barre de recherche -->
+          <div class="search-container" tabindex="0">
+            <!-- Image cliquable -->
+            <img
+              src="./image/Design-sans-titre.webp"
+              width="70 "
+              alt="loupe"
+              class="search-trigger"
+            />
 
-                <img src="hist.jpg" width="500" height="340" />
-                
-            
-               
-                <iframe width="752" height="423" src="https://www.youtube.com/embed/p50NKEv6OdQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
+            <!-- Barre de recherche -->
+            <div class="search-box">
+              <input type="text" placeholder="Recherchez ici..." />
+            </div>
+          </div>
         </nav>
 
-        <article> 
+        <header>
+          <div class="header-left">
+            <h1>Notre Histoire</h1>
+            <p>
+              Citroën est une marque française de voitures appartenant au groupe
+              Stellantis. Elle est appelée en forme longue Automobiles Citroën.
+              Fondée en juin 1919 par André Citroën. La marque est connue pour
+              ses avancées technologiques et, à plusieurs reprises, elle a
+              bouleversé le domaine de l'automobile. La Traction avant,
+              l'utilitaire H, les 2 CV, DS, Méhari, SM, GS, CX, BX et la XM sont
+              toutes des voitures d'avant-garde de Citroën. Citroën est une
+              filiale du groupe PSA depuis 1976 et Stellantis depuis 2021, qui
+              comprend DS Automobiles et Peugeot, ainsi que Vauxhall et Opel
+              2017. Ses bureaux d'études et de recherches sont situés à
+              Vélizy-Villacoublay, Poissy (CEMR), Carrières-sous-Poissy et
+              Sochaux-Montbéliard depuis 2021 (anciennement à Rueil-Malmaison).
+              Stellantis est actuellement dirigée par Carlos Tavares, ancien
+              numéro deux de Renault. Avec son département Citroën Racing
+              (anciennement Citroën Sport), Citroën participe à la compétition
+              automobile.
+            </p>
+          </div>
 
-            <button> Diagnostique interne</button>
-            <button> Diagnostique externe</button>
-            <button> Concurrence </button>
-            <button> Demande</button>
-            <button> RSE</button>
-            <button> A propos de nous</button>
+          <div class="header-right">
+            <img src="./image/hist.webp" width="500" alt="hist" />
+          </div>
+        </header>
+      </div>
 
-            <img src="concurrence.jpeg" width="400" height="280" />
-            <img src="rse.jpeg" width="500" height="280" />
-            <img src="demande.png" width="400" height="280" />
-           
+      <section class="tout">
+        <div class="milieu">
+          <div class="DI">
+            <a href="./page2.html"><button>Diagnostique interne</button></a>
+            <img
+              src="./image/diagnoint.webp"
+              width="350"
+              height="230"
+              alt="diagno interne"
+            />
+          </div>
 
+          <div class="DE">
+            <a href="./page3.html"><button>Diagnostique externe</button></a>
+            <img
+              src="./image/diagnoext.webp"
+              width="350"
+              height="230"
+              alt="diagnoext"
+            />
+          </div>
 
+          <div class="CONC">
+            <a href="./page4.html"><button>Force de Porter</button></a>
+            <img
+              src="./image/concurrence.webp"
+              width="350"
+              height="230"
+              alt="concurrence"
+            />
+          </div>
 
-        </article>
+          <div class="DEM">
+            <a href="./p5.html"><button>Analyse de Pestel</button></a>
 
-    </main>
+            <img
+              src="./image/demande.webp"
+              width="350"
+              height="230"
+              alt="demande"
+            />
+          </div>
+          <div class="RSE">
+            <a href="./page6.html"><button>RSE</button></a>
+            <img src="./image/rse.webp" width="350" height="280" alt="rse" />
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <img src="foot.jpg" width="500" height="300" />
-        <p>&copy;Frey Alyssia ELIK Asya</p>
-        Nous suivre
-        
-    </footer>
-</body>
+      <footer>
+        <div class="textebas">
+          <div class="NS">
+            <div><p>&copy;Frey Alyssia ELIK Asya</p></div>
+          </div>
+          <div class="reseau">
+            <p>Nous suivre |</p>
+            <ul>
+              <li>
+                <a href="https://www.instagram.com/citroen/" target="_blank"
+                  ><img src="./image/insta.webp" width="60px" alt="insta"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://fr.linkedin.com/company/citroen"
+                  target="_blank"
+                  ><img src="./image/linked.webp" width="60px" alt="linkedil"
+                /></a>
+              </li>
+              <li>
+                <a href="https://x.com/CitroenFrance" target="_blank"
+                  ><img src="./image/twiter.webp" width="60px" alt="twiter"
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/user/theofficialcitroen"
+                  target="_blank"
+                  ><img src="./image/yout.webp" width="60px" alt="youtube"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div class="spacer"></div>
+    </div>
+  </body>
 </html>

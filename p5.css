@@ -1,0 +1,420 @@
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* Balise de base */
+
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+li
+{
+    list-style: none;
+}
+
+p
+{
+    font-size: 1rem;
+    text-align: justify;
+    margin: 10px 10px;
+    width: 80%;
+}
+
+h1
+{
+    text-align: left;
+    font-size: 25px;
+    margin-left: -55%;
+    
+}
+
+h2
+{
+    text-align: left;
+    font-size: 20px;
+    margin-left: -76%;
+    
+}
+
+h3
+{
+    font-size: 20px;
+    text-align: left;
+    margin-left: -67%;
+   
+}
+
+h4
+{
+    text-align: center;
+    margin-left: -55%;
+}
+
+article a
+{
+    margin-left: 13%;
+}
+
+
+
+ /* loupe et barre de recherche */
+  /* Conteneur principal */
+  .search-container {
+    position: relative;
+    text-align: center;
+  }
+
+  /* Image cliquable */
+  .search-trigger {
+    width: 79px;
+    height: 79px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: auto;
+    transition: transform 0.3s ease;
+  }
+
+  .search-trigger:hover {
+    transform: scale(1.1); /* Effet de zoom au survol */
+  }
+
+  /* La barre de recherche cachée */
+  .search-box {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    top: 31%;
+    left: -84%;
+    transform: translateX(-50%);
+    width: 164px;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border: 2px solid #c90a04;
+    border-radius: 13px;
+    outline: none;
+  }
+
+  /* Montrer la barre de recherche au clic */
+  .search-container:focus-within .search-box {
+    display: block; /* Afficher quand on clique */
+  }
+
+  /* Supprimer le focus visible */
+  .search-container:focus-within .search-trigger {
+    outline: none;
+  }
+
+
+
+/* Styles généraux */
+body {
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color:rgb(215, 215, 215) ;
+  }
+  
+  /* Conteneur de la barre */
+  .progress-bar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #000000; /* Couleur de fond */
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  /* Barre de progression */
+  .progress-bar {
+    height: 100%;
+    background-color: #c0c0c0; /* Couleur de progression */
+    transform-origin: left; /* L'animation part de la gauche */
+    animation: fillProgress linear;
+    animation-timeline: scroll(root block); /* Synchronise avec le scroll */
+  }
+  
+  /* Animation Keyframes */
+  @keyframes fillProgress {
+    from {
+      transform: scaleX(0); /* Barre vide */
+    }
+    to {
+      transform: scaleX(1); /* Barre pleine */
+    }
+  }
+  
+  /* Contenu long pour tester le défilement */
+  .content {
+    height: 340vh;/* Simule une très longue page */
+    
+  }
+  
+  .spacer {
+    height: 2px; /* Espace pour défiler */
+  }
+  
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* Fleche retour en haut */
+
+.btn
+{
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    left:50%;
+    bottom: -232%;
+    cursor: pointer;
+}
+
+.icone
+{
+    width: 50px;
+   
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* haut de page */
+.haut
+{
+    background-color: black;
+    width: 100%;
+}
+
+/* Button choix ---------------------------------------------------------------- */
+.choix
+{
+    display: inline-block;
+}
+
+
+.choix button
+{
+    background-color: hsl(0, 0%, 0%);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+
+.choix a
+{
+    display: block;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 15px 7px;
+    border-radius: 20px;
+    padding: 11px;
+
+}
+
+.choix .contentchoix
+{
+    display: none;
+    background-color: hsla(0, 0%, 0%, 0.425) ;
+    position: absolute;
+    min-width: 100px; 
+    box-shadow: 2px 2px 5px hsla(0,0%,0%,0.8);
+    border-radius: 20px;
+
+}
+
+.choix:hover .contentchoix{
+    display: block;
+}
+
+.choix:hover button{
+    background-color: red;
+}
+
+.choix a:hover{
+    background-color: red;
+}
+/* --------------------------------------------------------------------- */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul
+{
+    display: flex;
+    width: 50%;
+    justify-content: space-between; 
+}
+
+
+.header
+{
+    display: flex;
+    align-items: flex-start;
+
+  
+}
+
+.header-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 33px;
+    line-height: 23px;
+}
+
+
+
+.header-right
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-right img
+{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 8% auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* Button */
+nav button
+{
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 20px;
+    padding: 14px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: white;
+    transition: all 1s;
+
+}
+
+nav button:hover
+{
+    background-color: rgb(199, 36, 36);
+    color:white;
+}
+
+.tout
+{
+    display: flex;
+    background: rgb(72, 72, 72);
+    justify-content: center;
+    width: 90%;
+    margin-left: 76px;
+}
+
+.tout button
+{
+
+    text-align: center;
+    margin-right: 10%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 14px;
+    background-color: rgb(202, 31, 31);
+    border: none;
+    font-size: 18px;
+    border-radius: 25px;
+    color: white;
+    transition: all 1s;
+
+}
+
+button:hover
+{
+    background-color: rgb(255, 255, 255);
+    color:black;
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* div texte1 de haut de page */
+
+.textem1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./image/fondapes.webp");
+    background-repeat: repeat-x;
+}
+
+.textem2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+/* Bas de page */
+
+footer
+{
+    
+    background-image: url("./image/footdi.webp");
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%;
+    height: 380px;
+    padding: 10%;
+}
+
+.textebas
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-left: -140px;
+    margin-bottom: -9%;
+    margin-right: -11%;
+
+}
+
+.reseau
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.reseau ul
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
