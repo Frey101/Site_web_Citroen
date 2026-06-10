@@ -1,13 +1,13 @@
-# 🚗 SAÉ 1.06 : Analyse de Gestion & Création Web — Focus Citroën
+# SAÉ 1.06 : Analyse de Gestion & Création Web — Focus Citroën
 
-## 📋 Présentation du Projet
+## Présentation du Projet
 Ce dépôt contient les travaux réalisés dans le cadre de la **SAÉ 1.06 (Situation d'Apprentissage et d'Évaluation)**. L'objectif de ce projet transversal était de choisir une marque (ici **Citroën**) pour mener une double étude : d'une part une analyse stratégique et de gestion complète, et d'autre part la conception et le développement d'un site web dédié.
 
 Ce projet a été mené intégralement en **binôme**, de la phase d'analyse de marché jusqu'à l'intégration finale du site.
 
 ---
 
-## 🧠 1. Analyse Stratégique & Diagnostic (Rapport de Gestion)
+## 1. Analyse Stratégique & Diagnostic (Rapport de Gestion)
 Le projet s'appuie sur le document d'analyse `saé1.06_Citroën_ELIK_FREY.pdf` qui étudie la santé économique, le positionnement et l'environnement de la marque :
 
 *   **Diagnostic Interne (SWOT) :** Mise en avant de l'héritage d'innovation de Citroën (Traction, suspension hydropneumatique, programme *Advanced Comfort*) et de ses engagements RSE (économie circulaire, matériaux verts avec la Citroën Ami). Analyse également de ses faiblesses récentes (baisse de parts de marché en Europe, enjeux historiques de fiabilité électronique/mécanique).
@@ -16,7 +16,7 @@ Le projet s'appuie sur le document d'analyse `saé1.06_Citroën_ELIK_FREY.pdf` q
 
 ---
 
-## 🎨 2. Design d'Interface & UI/UX (Figma)
+## 2. Design d'Interface & UI/UX (Figma)
 Avant l'étape de code, nous avons conçu l'architecture visuelle du site sur **Figma** afin de proposer une expérience utilisateur fluide, moderne et en accord avec la nouvelle identité de Citroën.
 
 *   Conception de *wireframes* et de maquettes haute fidélité.
@@ -25,7 +25,7 @@ Avant l'étape de code, nous avons conçu l'architecture visuelle du site sur **
 
 ---
 
-## 💻 3. Intégration & Développement Web (HTML / CSS)
+## 3. Intégration & Développement Web (HTML / CSS)
 La dernière phase a consisté à traduire techniquement les maquettes validées en un site web fonctionnel et interactif.
 
 *   **HTML5 :** Structuration sémantique propre, respectueuse de l'accessibilité web et du référencement naturel (SEO).
@@ -40,14 +40,3 @@ La dernière phase a consisté à traduire techniquement les maquettes validées
 *   **Développement :** HTML5, CSS3, Visual Studio Code
 *   **Versionnage :** Git & GitHub
 
----
-
-## 📂 Structure du Dépôt
-```text
-├── saé1.06_Citroën_ELIK_FREY.pdf   # Rapport de gestion et d'analyse de la marque
-├── index.html                      # Page d'accueil du site internet
-├── css/
-│   └── style.css                   # Feuilles de style pour le design complet
-├── assets/
-│   └── img/                        # Logos, illustrations et visuels des véhicules
-└── README.md                       # Présentation du dépôt (ce fichier)
